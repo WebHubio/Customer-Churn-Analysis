@@ -2,9 +2,9 @@
 
 ## 📌 Project Overview
 
-This project presents an end-to-end Customer Churn Analysis and Prediction solution using Python, SQL concepts, Machine Learning, and Power BI. The objective is to identify the key factors influencing customer churn, build predictive machine learning models, and provide actionable business insights through an interactive dashboard.
+This project presents an **end-to-end Customer Churn Analysis and Prediction** solution using **Python, SQL, Machine Learning, and Power BI**. The objective is to identify the key factors influencing customer churn, build predictive machine learning models, and provide actionable business insights through an interactive dashboard.
 
-The project follows a complete data analytics workflow including data preprocessing, exploratory data analysis (EDA), feature engineering, model development, evaluation, and business intelligence visualization.
+The project follows a complete data analytics workflow including **data preprocessing, exploratory data analysis (EDA), feature engineering, predictive model development, evaluation, and business intelligence visualization**.
 
 ---
 
@@ -21,8 +21,8 @@ The project follows a complete data analytics workflow including data preprocess
 
 - **Dataset:** Telco Customer Churn Dataset
 - **Records:** 7,032 Customers
-- **Features:** 21 Original Features
-- **Final Engineered Features:** 30+
+- **Original Features:** 21
+- **Engineered Features:** 30+
 
 ---
 
@@ -33,6 +33,7 @@ The project follows a complete data analytics workflow including data preprocess
 - NumPy
 - Matplotlib
 - Scikit-learn
+- SQL
 - Jupyter Notebook
 - Power BI
 - Git
@@ -40,11 +41,11 @@ The project follows a complete data analytics workflow including data preprocess
 
 ---
 
-## 📈 Exploratory Data Analysis
+## 📈 Exploratory Data Analysis (EDA)
 
 Performed comprehensive exploratory data analysis to understand customer churn behavior.
 
-Key analyses include:
+### Key analyses include:
 
 - Customer Demographics
 - Tenure Analysis
@@ -65,12 +66,12 @@ Key analyses include:
 ## ⚙️ Data Preprocessing
 
 - Missing Value Treatment
+- Data Cleaning
+- Duplicate Validation
 - Feature Encoding
 - Label Encoding
 - One-Hot Encoding
 - Feature Engineering
-- Data Cleaning
-- Duplicate Validation
 - Train-Test Split
 
 ---
@@ -85,28 +86,68 @@ The following classification models were developed and evaluated:
 
 ---
 
-
 ## 📊 Model Performance
 
-| Model | Accuracy |
-|--------|----------|
+| Model               | Accuracy   |
+| ------------------- | ---------- |
 | Logistic Regression | **80.31%** |
-| Random Forest | **78.54%** |
-| Decision Tree | **71.29%** |
+| Random Forest       | **78.54%** |
+| Decision Tree       | **71.29%** |
 
-**Best Performing Model:** Logistic Regression
+🏆 **Best Performing Model:** Logistic Regression
 
 ---
 
 ## 📌 Key Business Insights
 
-- Customers with Month-to-Month contracts exhibit the highest churn rate.
-- Fiber Optic users churn significantly more than DSL users.
-- Electronic Check customers show the highest churn percentage.
-- Customers without Online Security and Tech Support are more likely to churn.
-- Paperless Billing customers churn more frequently.
-- Longer-tenure customers demonstrate stronger retention.
-- Customers with higher Monthly Charges exhibit greater churn probability.
+- Customers with **Month-to-Month contracts** exhibit the highest churn rate.
+- **Fiber Optic** users churn significantly more than DSL users.
+- **Electronic Check** customers show the highest churn percentage.
+- Customers without **Online Security** and **Tech Support** are more likely to churn.
+- **Paperless Billing** customers churn more frequently.
+- Customers with **Longer Tenure** demonstrate stronger retention.
+- Customers with **Higher Monthly Charges** exhibit greater churn probability.
+
+---
+
+# 📊 Power BI Dashboard
+
+The interactive Power BI dashboard provides business insights through two report pages.
+
+### 📍 Executive Overview
+
+- KPI Cards
+- Customer Churn Distribution
+- Churn by Contract Type
+- Churn by Payment Method
+- Churn by Internet Service
+
+### 📍 Customer Analysis
+
+- Interactive Filters
+- Churn by Senior Citizen
+- Churn by Dependents
+- Churn by Partner
+- Monthly Charges vs Tenure Scatter Plot
+
+### 🎛️ Available Filters
+
+- Contract Type
+- Internet Service
+- Payment Method
+- Gender
+
+---
+
+# 📷 Dashboard Preview
+
+## Executive Overview
+
+![Executive Overview](images/dashboard_page1.png)
+
+## Customer Analysis Dashboard
+
+![Customer Analysis Dashboard](images/dashboard_page2.png)
 
 ---
 
@@ -115,41 +156,39 @@ The following classification models were developed and evaluated:
 ```text
 Customer-Churn-Analysis/
 │
-├── data/
-│   ├── raw/
-│   └── processed/
+├── dashboard/
+│   └── Customer_Churn_Dashboard.pbix
 │
-├── notebooks/
-│   └── customer_churn_analysis.ipynb
+├── data/
+│
+├── images/
+│   ├── dashboard_page1.png
+│   └── dashboard_page2.png
 │
 ├── models/
 │   └── customer_churn_model.pkl
 │
-├── dashboard/
-│   └── Customer_Churn_Dashboard.pbix
+├── notebooks/
+│   └── customer_churn_analysis.ipynb
 │
-├── screenshots/
+├── sql/
 │
-├── requirements.txt
+├── .gitignore
+├── main.py
 ├── README.md
-└── main.py
+└── requirements.txt
 ```
-
----
-
-## 📷 Dashboard Preview
-
-🚧 Dashboard screenshots will be added after Power BI dashboard completion.
 
 ---
 
 ## 🚀 Future Enhancements
 
-- Deploy Machine Learning model using Streamlit
-- Real-time churn prediction
-- Interactive Power BI dashboard enhancements
-- Hyperparameter tuning
-- Model deployment using Flask/FastAPI
+- Deploy the Machine Learning model using Streamlit
+- Publish dashboard to Power BI Service
+- Real-time customer churn prediction
+- Add advanced DAX measures and KPIs
+- Hyperparameter tuning for improved model performance
+- Build REST API using Flask/FastAPI
 
 ---
 
@@ -157,4 +196,6 @@ Customer-Churn-Analysis/
 
 **Shaima Sheikh**
 
-GitHub: https://github.com/WebHubio
+🎓 BCA Student | Aspiring Data Analyst
+
+🔗 GitHub: https://github.com/WebHubio
